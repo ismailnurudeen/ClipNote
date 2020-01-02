@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="dot_active">#FFC107</color>
+    <color name="dot_inactive">#E2E1E1</color>
+    <color name="aboutBg">#587C99</color>
+    <color name="bgColor">#F8F8F8</color>
+    <color name="about_text_color">#595959</color>
+
+    <color name="about_background_color">#FFFFFF</color>
+    <color name="about_brief_text_color">#F5F5F5</color>
+
+    <color name="primary">#000000</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#000000</color>
+    <color name="primary_text">#f59870</color>
+    <color name="secondary_text">#ffc6c6</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="background">#6163ce</color>
+    <color name="backgroundDark">#353554</color>
+</resources>

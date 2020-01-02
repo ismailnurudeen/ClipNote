@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ClipNote</string>
+    <string name="about_me">I build smart apps that solve complex problems in a simple way.</string>
+    <string name="my_email">ibrightstar247@gmail.com</string>
+    <string name="my_website">http://ismailnurudeen.github.io</string>
+    <string name="my_fb_id">ismailnurudeen01</string>
+    <string name="my_twitter_id">TeenMutantCoder</string>
+    <string name="my_linkedin_id">ismail-nurudeen-03639414b</string>
+    <string name="my_play_id">6580496115628907952</string>
+    <string name="copy_right">Copyrights Ismail Nurudeen</string>
+    <string name="app_playstore_link_template">https://play.google.com/store/apps/details?id=</string>
+    <string name="next">next</string>
+    <string name="prev">prev</string>
+    <string name="skip">skip</string>
+    <string name="intro_continue">continue</string>
+    <string name="got_it">Got It</string>
+    <string name="my_phone_num">+2348163471885</string>
+    <string name="my_name">Ismail Nurudeen</string>
+</resources>
