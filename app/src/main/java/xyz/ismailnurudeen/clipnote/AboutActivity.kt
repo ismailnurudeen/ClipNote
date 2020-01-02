@@ -1,11 +1,12 @@
 package xyz.ismailnurudeen.clipnote
 
 import android.os.Bundle
-import androidx.core.content.ContextCompat
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Gravity
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_about.*
 import mehdi.sakout.aboutpage.AboutPage
 import mehdi.sakout.aboutpage.Element
 import java.util.*
@@ -29,7 +30,10 @@ class AboutActivity : AppCompatActivity() {
             .addItem(getCopyRightsElement())
             .create()
         setContentView(aboutPage)
-        setupToolbar()
+        about_nav_back.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun setupToolbar() {
