@@ -67,6 +67,7 @@
             android:fontFamily="sans-serif-light"
             android:padding="8dp"
             android:textSize="16sp"
+            android:textColor="@android:color/black"
             tools:text="Hello World" />
     </ScrollView>
 

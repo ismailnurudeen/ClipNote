@@ -19,7 +19,6 @@
             android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".ViewNoteActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".AboutActivity2" />
         <activity android:name=".OnboardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

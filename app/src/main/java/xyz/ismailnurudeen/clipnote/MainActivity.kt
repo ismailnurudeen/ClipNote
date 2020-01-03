@@ -66,8 +66,7 @@ class MainActivity : AppCompatActivity() {
                     showDeleteAllConfirmationDialog()
                 }
                 R.id.menu_how_to -> {
-                    prefsManager.hasShownNoteTapTarget = true
-                    appUtils.showHelpTapTarget(this)
+                    HowToDialog().show(supportFragmentManager.beginTransaction(), HowToDialog.TAG)
                 }
             }
             true
@@ -77,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             optionsPopup.show()
         }
         home_info.setOnClickListener {
-            startActivity(Intent(this, AboutActivity2::class.java))
+            startActivity(Intent(this, AboutActivity::class.java))
         }
 
     }

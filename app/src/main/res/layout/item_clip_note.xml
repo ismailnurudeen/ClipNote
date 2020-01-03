@@ -57,6 +57,7 @@
                 android:ellipsize="end"
                 android:fontFamily="sans-serif-condensed-light"
                 android:gravity="center"
+                android:textColor="@android:color/black"
                 android:textSize="16sp"
                 tools:text="Hello World" />
         </FrameLayout>

@@ -63,7 +63,6 @@ class AppUtils(private val context: Context) {
     }
 
     fun deleteNote(index: Int): Boolean {
-        val currentTime = formatDate(Calendar.getInstance().time)
         val notesList = prefsManager.clipNotes ?: ArrayList()
         notesList.remove(notesList[index])
         prefsManager.clipNotes = notesList
@@ -203,7 +202,7 @@ class AppUtils(private val context: Context) {
             .addFeedbackAction(R.string.my_email)
             .addLinkedInLink(activity.getString(R.string.my_linkedin_id))
             .setVersionNameAsAppSubTitle()
-            .setLinksAnimated(true)
+            .setLinksAnimated(false)
             .setDividerDashGap(13)
             .setName(activity.getString(R.string.my_name))
             .setSubTitle("Mobile Developer")
@@ -216,8 +215,9 @@ class AppUtils(private val context: Context) {
             .setActionsColumnsCount(2)
             .addIntroduceAction {
                 PrefsManager(activity).hasShownHomeTapTarget = false
-                activity.startActivity(Intent(activity, MainActivity::class.java))
-                activity.finish()
+                val mainIntent=Intent(activity, MainActivity::class.java)
+                mainIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                activity.startActivity(mainIntent)
             }
             .addHelpAction(null as Intent?)
             .setWrapScrollView(true)
