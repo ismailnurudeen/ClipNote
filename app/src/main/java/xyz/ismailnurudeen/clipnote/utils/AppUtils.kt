@@ -196,7 +196,6 @@ class AppUtils(private val context: Context) {
             .addTwitterLink(activity.getString(R.string.my_twitter_id))
             .addFiveStarsAction()
             .addUpdateAction()
-            .addGooglePlayStoreLink(activity.getString(R.string.my_play_id))
             .addMoreFromMeAction("Deep Syntax")
             .addShareAction("Share App")
             .addFeedbackAction(R.string.my_email)
@@ -219,7 +218,6 @@ class AppUtils(private val context: Context) {
                 mainIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                 activity.startActivity(mainIntent)
             }
-            .addHelpAction(null as Intent?)
             .setWrapScrollView(true)
             .setShowAsCard(false)
 

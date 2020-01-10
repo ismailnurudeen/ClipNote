@@ -5,8 +5,8 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import xyz.ismailnurudeen.clipnote.utils.AppUtils
 
 class ProcessActivity : AppCompatActivity() {
@@ -23,7 +23,6 @@ class ProcessActivity : AppCompatActivity() {
     private fun copyToClipBoard(txt: String) {
         val cm = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         val cd = ClipData.newPlainText("clip", txt)
-        cm.primaryClip = cd
+        cm.setPrimaryClip(cd)
     }
-
 }

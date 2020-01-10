@@ -12,11 +12,9 @@ class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
-//        setupToolbar()
         AppUtils(this).loadAbout(this, R.style.AppThemeLight)
         about_nav_back.setOnClickListener{
             finish()
         }
     }
-
 }
